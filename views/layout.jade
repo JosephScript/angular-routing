@@ -1,0 +1,16 @@
+doctype html
+html(ng-app="myApp")
+  head
+    title= title
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js")
+    script(src="/javascripts/scripts.js")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    ul
+      li
+        a(ng-href="#/") Home
+      li
+        a(ng-href="#/about") About
+
+    block content

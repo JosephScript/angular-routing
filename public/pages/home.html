@@ -1,7 +1,8 @@
-
 <div>
   <h1>{{message}}</h1>
 </div>
 <ul>
-  <li ng-repeat="user in users">{{user.name}}</li>
+  <li ng-repeat="user in users">
+    <a ng-href="#/users/{{user.id}}">{{user.name}}</a>
+  </li>
 </ul>
